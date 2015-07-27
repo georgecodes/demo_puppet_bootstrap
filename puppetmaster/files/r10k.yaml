@@ -1,0 +1,11 @@
+#:cachedir: '/var/cache/r10k'
+
+:sources:
+ puppet_DEMO:
+    remote:  git@github.com:georgecodes/demo_r10k_control.git 
+    basedir: '/etc/puppet/environments'
+    prefix: 'AMP'
+ hiera_DEMO:
+    remote: git@github.com:georgecodes/demo_r10k_hiera.git
+    basedir: '/etc/puppet/hiera'
+    prefix: 'AMP'

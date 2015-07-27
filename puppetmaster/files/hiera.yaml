@@ -1,0 +1,13 @@
+---
+:backends:
+  - yaml
+:hierarchy:
+  - "nodes/%{::clientcert}"
+  - "environment/%{::tier}"
+  - "product/%{::product}"
+  - common
+
+:yaml:
+  :datadir: /etc/puppet/hiera/%{::environment}
+
+:merge_behavior: deeper
